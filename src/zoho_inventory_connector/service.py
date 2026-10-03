@@ -5,7 +5,6 @@ from typing import Any
 from .client import ZohoInventoryClient
 from .config import Settings
 
-
 CLOSED_ORDER_STATUSES = {"fulfilled", "void", "cancelled", "canceled", "closed"}
 
 
