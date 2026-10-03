@@ -32,8 +32,8 @@ jobs:
       - name: Compile
         run: python -m compileall -q src scripts examples
 
-      - name: Lint autofix diff
-        run: ruff check . --fix --diff
+      - name: Lint
+        run: ruff check .
 
       - name: Test
         run: pytest -q
