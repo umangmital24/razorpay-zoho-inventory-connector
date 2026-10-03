@@ -3,7 +3,6 @@ from functools import lru_cache
 from pydantic import Field, model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-
 READ_ONLY_SCOPES = (
     "ZohoInventory.settings.READ",
     "ZohoInventory.items.READ",
