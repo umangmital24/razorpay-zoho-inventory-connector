@@ -8,7 +8,6 @@ from .client import ZohoInventoryClient
 from .config import get_settings
 from .service import ZohoInventoryService
 
-
 mcp = FastMCP(
     "zoho-inventory",
     instructions=(
