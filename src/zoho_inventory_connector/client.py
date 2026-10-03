@@ -28,7 +28,7 @@ class ZohoInventoryClient:
         self._token_provider = token_provider or ZohoTokenProvider(settings)
         self._owns_token_provider = token_provider is None
 
-    async def __aenter__(self) -> "ZohoInventoryClient":
+    async def __aenter__(self) -> ZohoInventoryClient:
         return self
 
     async def __aexit__(self, *_: object) -> None:
