@@ -25,7 +25,7 @@ class ZohoTokenProvider:
         self._expires_at = float("inf") if settings.zoho_access_token else 0.0
         self._lock = asyncio.Lock()
 
-    async def __aenter__(self) -> "ZohoTokenProvider":
+    async def __aenter__(self) -> ZohoTokenProvider:
         return self
 
     async def __aexit__(self, *_: object) -> None:
